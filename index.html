@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        white: 'white',
+                        green:'#154444',
+                        lightgreen: '#244D4D',
+                        gray:'#444444',
+                        darker:'#383738',
+                        lightdark:'#242424',
+                        lightgrey:'#808080',
+                        yellow:'#D6D6D6'
+
+                    },
+                    
+                    borderRadius: {
+                        xsm: '3px',
+                        sm: '5px',
+                        xl:'50%'
+                    },
+                    fontFamily: {
+                        sans: [ 'DM Sans', 'sans-serif'],
+                        montserif: ['Montserrat', 'sans-serif']
+
+                    },
+                    screens: {
+                        'sm': '500px',
+                        'md': '768px',
+                        'lg': '992px',
+                        '2xl': '1200px',
+                    },
+
+                    width:{
+                        hero:'504px',
+                        about:'436px',
+                        class:'509px',
+                        furniture:'800px',
+                        white:'380px',
+                        tips:'243px'
+                    },
+
+                    height: {
+                        heroheight:'560px',
+                        layout:'806px'
+                    },
+
+                    gap:{
+                        gaphero:'194px',
+                        about:'135px',
+                        tip:'69px'
+                    }
+                    
+                }
+            }
+        }        
+    </script>
+</head>
+
+<body class="font-[montserif]">
+
+    <header>
+        <div class="mx-auto 2xl:container ">
+            <nav class="flex justify-between items-center py-6">
+                <div>
+                    <a href=""><img src="./assets/images/logo.png" alt=""></a>
+                </div>
+                <ul class="flex items-center gap-16 text-white font-roboto text-black">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+
+                <div class="flex items-center gap-8">
+                    <a href=""><img src="./assets/images/loupe 1 (1).png" alt=""></a>
+                    <a href=""><img src="./assets/images/menu 1.png" alt=""></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+   
+   
+    <main>
+
+        <section class="mb-36">
+            <div class="mx-auto 2xl:container">
+
+                <div class="flex items-center gap-gaphero bg-green h-heroheight">
+                    <div class="w-heroimg text-center h-heroheight">
+                        <img class="h-full" src="../assets/images/hero.png" alt="">
+                        
+                    </div>
+                    <div class="w-hero">
+                        <h2 class="text-6xl mb-2.5 font-bold text-white" >
+                            We Help You Make Modern Furniture
+                        </h2>
+                        <p class="text-lg mb-8 text-white font-[sans]">
+                            All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials 
+                        </p>
+
+                        <button class="bg-white py-3.5 px-6 rounded-md  hover:bg-violet-600 hover:text-white font-[sans] text-green">
+                            Explore More
+                        </button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-36">
+            <div class="mx-auto 2xl:container">
+                <h3 class="text-center font-[sans] text-4xl text-green">Trusted by 20,000+ companies</h3>
+                <ul class="flex items-center justify-center gap-16 py-12">
+                    <li><img src="./assets/images/mastercard.png" alt=""></li>
+                    <li><img src="./assets/images/airbnb.png" alt=""></li>
+                    <li><img src="./assets/images/uber.png" alt=""></li>
+                    <li><img src="./assets/images/paypal.png" alt=""></li>
+                    <li><img src="./assets/images/visa.png" alt=""></li>
+                    <li><img src="./assets/images/stripe.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-44">
+            <div class="mx-auto 2xl:container">
+                <div class="flex items-center gap-about">
+                    <div>
+                        <img src=".//assets/images/about.png" alt="">
+                    </div>
+
+                    <div class="w-about">
+                        <h3 class="font-bold text-green text-4xl mb-5">
+                            About Us
+                        </h3>
+                        <p class="text-xl text-gray mb-10">
+                            All of our furniture uses the best materials and  choices for our customers.All of our furniture  uses the best materials 
+                        </p>
+                        <ul>
+                            <li class="flex gap-8">
+                                <div>
+                                    <img src="./assets/images/quality.png" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="mb-3.5 text-xl text-green">Best Quality</h4>
+                                    <p class="darker mb-7">
+                                        All of our furniture uses the best  materials and choices
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-8">
+                                <div>
+                                    <img src="./assets/images/secure.png" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="mb-3.5 text-xl text-green">100% Secure</h4>
+                                    <p class="darker mb-7">
+                                        All of our furniture uses the best  materials and choices
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-8">
+                                <div>
+                                    <img src="./assets/images/free.png" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="mb-3.5 text-xl text-green">Free Shpping</h4>
+                                    <p class="darker">
+                                        All of our furniture uses the best  materials and choices
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-36">
+            <div class="mx-auto 2xl:container">
+                <h3 class="text-4xl mb-3 tetx-lightdark">
+                    Our Popular Furniture
+                </h3>
+                <p class="w-furniture text-xl mb-20">
+                    All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials and choices for our customers.
+                </p>
+               
+                <ul class="flex gap-8">
+                    <li class="shadow-xl">
+                        <img src="./assets/images/white1.png" alt="">
+                        <div class="flex flex-col">
+                            <div class="w-white pt-8 flex items-center justify-around mb-8">
+                                <h4 class="text-xl text-lightdark font-[sans]">White Swan Chair </h4>
+                                <div class="flex gap-2">
+                                    <div class="w-7 h-7 flex items-center  justify-center border border-solid border-black rounded-full hover:bg-orange-500 cursor-pointer hover:border-none hover:text-white active:bg-white active:border-solid active:text-green">
+                                        <i  class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="w-7 h-7 flex items-center  justify-center border border-solid border-black rounded-full hover:bg-orange-500 cursor-pointer hover:border-none hover:text-white active:bg-white active:border-solid active:text-green">
+                                        <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+
+                            <div class="w-white  flex items-center justify-around mb-8">
+                                
+                                   <div>
+                                        <p class="text-2xl text-green">
+                                            $40 
+                                        </p>
+                                   </div>
+                                   <div>
+                                        <button class="py-1.5 px-3.5 bg-green text-white hover:bg-violet-600 hover:text-black" type="button">Buy Now</button>
+                                   </div> 
+
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="shadow-2xl">
+                        <img src="./assets/images/white2.png" alt="">
+                        <div class="flex flex-col">
+                            <div class="w-white pt-8 flex items-center justify-around mb-8">
+                                <h4 class="text-xl text-lightdark font-[sans]">White Swan Chair </h4>
+                                <div class="flex gap-2">
+                                    <div class="w-7 h-7 flex items-center  justify-center border border-solid border-black rounded-full hover:bg-orange-500 cursor-pointer hover:border-none hover:text-white active:bg-white active:border-solid active:text-green">
+                                        <i  class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="w-7 h-7 flex items-center  justify-center border border-solid border-black rounded-full hover:bg-orange-500 cursor-pointer hover:border-none hover:text-white active:bg-white active:border-solid active:text-green">
+                                        <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+
+                            <div class="w-white  flex items-center justify-around mb-8">
+                                
+                                   <div>
+                                        <p class="text-2xl text-green">
+                                            $40 
+                                        </p>
+                                   </div>
+                                   <div>
+                                        <button class="py-1.5 px-3.5 bg-green text-white hover:bg-violet-600 hover:text-black" type="button">Buy Now</button>
+                                   </div> 
+
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="shadow-2xl">
+                        <img src="./assets/images/white3.png" alt="">
+                        <div class="flex flex-col">
+                            <div class="w-white pt-8 flex items-center justify-around mb-8">
+                                <h4 class="text-xl text-lightdark font-[sans]">White Swan Chair </h4>
+                                <div class="flex gap-2">
+                                    <div class="w-7 h-7 flex items-center  justify-center border border-solid border-black rounded-full hover:bg-orange-500 cursor-pointer hover:border-none hover:text-white active:bg-white active:border-solid active:text-green">
+                                        <i  class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="w-7 h-7 flex items-center  justify-center border border-solid border-black rounded-full hover:bg-orange-500 cursor-pointer hover:border-none hover:text-white active:bg-white active:border-solid active:text-green">
+                                        <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+
+                            <div class="w-white  flex items-center justify-around mb-8">
+                                
+                                   <div>
+                                        <p class="text-2xl text-green">
+                                            $40 
+                                        </p>
+                                   </div>
+                                   <div>
+                                        <button class="py-1.5 px-3.5 bg-green text-white hover:bg-violet-600 hover:text-black" type="button">Buy Now</button>
+                                   </div> 
+
+                            </div>
+                        </div>
+                        
+                    </li>
+                </ul>
+                
+
+            </div>
+        </section>
+
+
+        <section>
+            <h3>
+                All Furniture
+            </h3>
+
+            <ul>
+                <li>
+                    <a href="">Shop By Room</a>
+                </li>
+                <li>
+                    <a href="">Shop By Category</a>
+                </li>
+                <li>
+                    <a href="">Shop By Style</a>
+                </li>
+            </ul>
+        </section>
+
+
+        
+
+    </main>
+    
+    
+    <footer>
+        
+            <div class="mx-auto 2xl:container ">
+                
+
+            </div>
+            
+        
+
+
+    </footer>
+
+</body>
+
+</html>
