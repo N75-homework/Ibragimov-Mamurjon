@@ -1,3 +1,10 @@
+var ism = prompt('Ismingizni kiriting');
+var OTM = prompt('OTM lar dan birini tanlang: 1.TDIU 2.TDMI 3.MU');
+var ball = prompt( ism, 'balingizni kiriting:');
+
+
+
+
 var grant = 'Grant asosida oqishga tavsiya qilindingiz';
 var kantrakt = 'Kontrakt asosida oqishga tavsiya qilindingiz';
 var past = 'Oqishga tavsiya qilinmadingiz';
@@ -5,12 +12,6 @@ var xato = 'Siz notgri malumot kiritdingiz';
 
 
 
-
-var ism = prompt('Ismingizni kiriting');
-
-var OTM = prompt('OTM lar dan birini tanlang: 1.TDIU 2.TDMI 3.MU');
-
-var ball = prompt( ism, 'balingizni kiriting:');
 
 if (OTM == 1){
     if(ball >= 150){
@@ -35,10 +36,10 @@ if (OTM == 1){
         alert(kantrakt);
     }
     else if(100 >= ball > 0){
-        alert( noo);
+        alert( past);
     }
     else{
-        alert(erro);
+        alert(xato);
     }
 }else if(OTM == 3){
     if(ball >= 180){
@@ -50,11 +51,11 @@ if (OTM == 1){
     }
     else if(168 >= ball > 0){
         // console.log(no);
-        alert( noo);
+        alert( past);
     }
     else{
-        alert(erro);
+        alert(xato);
     }
 }else{
-    alert(erro);
+    alert(xato);
 }
