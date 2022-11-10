@@ -5,11 +5,27 @@
   list-style: none;
   text-decoration: none;
 }
-form{
-  margin: 0 auto;
-  display: flex;
-  width: 500px;
-  justify-content: center;
-  /* align-items: flex-start; */
-  flex-direction: column;
+
+
+  .box{
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+
+
+table{
+	margin-top: 50px;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+
+#show th, #show td{
+	padding: 13px;
+}
+
+#btna td input{
+	width: 100%;
 }

@@ -1,38 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amaliyot</title>
-    <link rel="stylesheet" href="./style.css">
+	<title>Table</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <form id="form">
-        <h1>Registration</h1>
-        <input id="user_name" name="user_name" type="text" placeholder="Enter your name" required>
-        <input id="user_surname" name="user_surname" type="text" placeholder="Enter your surname" required>
-        <input id="input_text" name="user_text" type="text" placeholder="Enter text..." required>
-        <label>
-            <input id="married" type="radio" name="isMarried" value="Uylangan">
-            Uylangan
-        </label>
-        <label>
-            <input id="married2" type="radio" name="isMarried" value="Uylanmagan">
-            Uylanmagan
-        </label>
-        <label>
-            <input id="want" type="checkbox" name="dream" value="Jon deydi">
-            Qo'shimcha niyyat bormi
-        </label>
-        <button id="btn" type="submit">Send</button>
-    </form>
 
-    <div id="box">
 
+		<div class="box">
+      <table border="4">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <td><input type="text" name="fname" id="fname"></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Last Name</th>
+            <td><input type="text" name="lname" id="lname"></td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td><input type="text" name="email" id="email"></td>
+          </tr>
+          <tr>
+            <th>Age</th>
+            <td><input type="text" name="age" id="age"></td>
+          </tr>
+          <tr id="btna">
+            <td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+          </tr>
+        </tbody>
+      </table>
+      <table border="4" id="show">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+      </table>
     </div>
-    
-    <script src="./main.js"></script>
+
+	
+	<script src="./index.js"></script>
 </body>
 </html>

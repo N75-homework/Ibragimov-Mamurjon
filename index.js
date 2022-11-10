@@ -1,26 +1,33 @@
-var $InputText = document.querySelector("#input_text");
-var $userSurName = document.querySelector("#user_surname");
-var $userName = document.querySelector("#user_name");
-var $married = document.querySelector("#married");
-var $married2 = document.querySelector("#married2");
-var $want = document.querySelector("#want");
-var $box = document.querySelector("#box");
-var $Form = document.querySelector("#form");
-var $btn = document.querySelector("#btn");
 
+		
+		var list1 = [];
+		var list2 = [];
+		var list3 = [];
+		var list4 = [];
 
-$Form.addEventListener("submit", function(evt) {
-    evt.preventDefault()
+		var n = 1;
+		var x = 0;
 
-    $box.innerHTML = `<h2>Ismi: ${$userName.value}</h2>
-    <h3>Familyasi: ${$userSurName.value}</h3>
-    <p>Otasining ismi: ${$InputText.value}</p>
-    <p>Uylanganmi: ${$married.value || $married2.value}</p>
-    <p>Yana hohlaydimi: ${$want.value}</p>`
+		function AddRow(){
 
-    $InputText.value = null
-    $userSurName.value = null
-    $userName.value = null
-    $married.value = null
-    $want.value = null
-})
+			var AddRown = document.getElementById('show');
+			var NewRow = AddRown.insertRow(n);
+
+			list1[x] = document.getElementById("fname").value;
+			list2[x] = document.getElementById("lname").value;
+			list3[x] = document.getElementById("email").value;
+			list4[x] = document.getElementById("age").value;
+
+			var cel1 = NewRow.insertCell(0);
+			var cel2 = NewRow.insertCell(1);
+			var cel3 = NewRow.insertCell(2);
+			var cel4 = NewRow.insertCell(3);
+
+			cel1.innerHTML = list1[x];
+			cel2.innerHTML = list2[x];
+			cel3.innerHTML = list3[x];
+			cel4.innerHTML = list4[x];
+
+			n++;
+			x++;
+		}
