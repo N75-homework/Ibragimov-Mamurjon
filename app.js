@@ -1,29 +1,37 @@
-// set inital value to zero
-let count = 0;
-// select value and buttons
-const value = document.querySelector("#value");
-const btns = document.querySelectorAll(".btn");
+function add(){
+  fst = parseInt(myform.fst.value);
+  snd = parseInt(myform.snd.value);
+  result = fst+snd;
+  myform.result.value = result;
+  
 
-btns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    const styles = e.currentTarget.classList;
-    if (styles.contains("decrease")) {
-      count--;
-    } else if (styles.contains("increase")) {
-      count++;
-    } else {
-      count = 0;
-    }
+}
 
-    if (count > 0) {
-      value.style.color = "green";
-    }
-    if (count < 0) {
-      value.style.color = "red";
-    }
-    if (count === 0) {
-      value.style.color = "#222";
-    }
-    value.textContent = count;
-  });
-});
+function subtract(){
+  fst = parseInt(myform.fst.value);
+  snd = parseInt(myform.snd.value);
+  result = fst-snd;
+  myform.result.value = result;
+  
+
+}
+
+function multiply(){
+  fst = parseInt(myform.fst.value);
+  snd = parseInt(myform.snd.value);
+  result = fst*snd;
+  myform.result.value = result;
+  
+
+}
+
+function devide(){
+  fst = parseInt(myform.fst.value);
+  snd = parseInt(myform.snd.value);
+  result = fst/snd;
+  myform.result.value = result;
+  
+
+}
+
+
