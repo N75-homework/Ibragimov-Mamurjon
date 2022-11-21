@@ -1,5 +1,9 @@
 * {
 	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 body {
     background:linear-gradient(to right, #6441a5, #2a0845);
@@ -36,8 +40,10 @@ h2 {
 {
    display:inline-block;
    position:relative ;
-   margin:4%; margin-bottom:2%;
-   color:#000; font-size:18px;
+   margin:4%; 
+   margin-bottom:2%;
+   color:#000; 
+   font-size:18px;
    text-indent:40px;
    font-weight:bolder;
    
@@ -97,4 +103,10 @@ input:hover
     border-bottom:5px solid #6441a5;
 }
 
+
+@media screen and(max-width:400px) {
+    .container{
+        width: 100%;
+    }
+}
 
