@@ -1,0 +1,12 @@
+.card-body .card-title {
+    padding-bottom: 5px;
+}
+
+.card-body .card-subtitle {
+    padding-bottom: 5px;
+}
+
+.loading,
+.error {
+    color: grey;
+}
